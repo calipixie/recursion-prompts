@@ -92,7 +92,7 @@ var range = function(x, y) {
 var exponent = function(base, exp) {
   if (exp === 0) {
     return 1;
-  } else if (exp < 0.0000001) {
+  } else if (exp < 0) {
     return 1 / base * exponent(base, exp + 1);
   } 
   return base * exponent(base, exp - 1);
